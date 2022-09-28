@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    padding: 0.3em;
+    position: relative;
+}
+
+.login-link{
+    text-decoration: none;
+    color: var(--azul);
+    border: 1px solid var(--azul);
+    padding: 1em 3em;
+    font-size: 14px;
+    font-weight: 500;
+}
+.container__botao{
+    display: none;
+}
+.pesquisa{
+    display: none;
+}
+.container__botao:checked~.pesquisa{
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 98%;
+}
